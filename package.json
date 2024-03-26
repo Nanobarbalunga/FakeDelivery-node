@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "start":"node server.js",
+    "dev": "npx nodemon server.js"
+  },
+  "name": "fake-delivery-server",
+  "version": "0.0.1",
+  "description": "Fake APIs ",
+  "main": "server.js",
+  "author": "nanobarbalunga@gmail.com",
+  "license": "MIT"
+}

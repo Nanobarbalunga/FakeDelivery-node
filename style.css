@@ -1,0 +1,16 @@
+.wrap-container{
+    width: 36em;
+    min-height: 10em;
+}
+
+.wrap-container h2{
+    padding-left: 0.25em;
+ }
+
+.wrap-container pre{
+   background-color: black;
+   color: aliceblue;
+   font-weight: 400;
+   border-radius: 5px;
+   padding: 3em 1.25em;
+}
