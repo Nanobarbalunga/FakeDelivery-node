@@ -1,15 +1,15 @@
 const Model=require("../models");
 const nb=require("../libs/nb");
 
-class FPDModel extends Model{
+class FRestaurantsModel extends Model{
 	
 	create() {
-		let val=nb.Blog.generateRandomPosts(6);
+		let val=nb.Delivery.generateFullRestaurants(6);
 		nb.Cache.createSync(val,`${this.constructor.name}.json`);
 	}
 	read() {
 		let val=nb.Cache.readSync(`${this.constructor.name}.json`);
-		return val?val:nb.Blog.generateRandomPosts(6);
+		return val?val:nb.Delivery.generateFullRestaurants(6);
 	}
 	update() {
 		
@@ -20,4 +20,4 @@ class FPDModel extends Model{
 	
 }
 
-module.exports = FPDModel;
+module.exports = FRestaurantsModel;
