@@ -2,8 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const path = require('path');
 
-const routes = require('./routes');
+const routes = require(path.join(__dirname,'./routes'));
 
 console.log(`* Creazione app express`, '...')
 const app = express();
