@@ -38,9 +38,9 @@ app.use('/',(req,res)=>{
 
 console.log(`* Creazione app express`,5, ' ...')
 
-app.listen(process.env.PORT || 4000, function() {
+app.listen(4000, function() {
 	console.log(`* Creazione app express`,6, ' ...')
-	console.log('Express app running on port ' + (process.env.PORT || 4000))
-	console.log('site => http://localhost:' + (process.env.PORT || 4000))
+	console.log('Express app running on port ' + (4000))
+	console.log('site => http://localhost:' + (4000))
 });
 console.log(`* Creazione app express`,7, ' ...')
