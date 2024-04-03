@@ -44,3 +44,5 @@ app.listen(4000, function() {
 	console.log('site => http://localhost:' + (4000))
 });
 console.log(`* Creazione app express`,7, ' ...')
+
+module.exports = app;
