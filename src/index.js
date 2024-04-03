@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 const routes = require('./routes');
 
+console.log(`* Creazione app express`, '...')
 const app = express();
 
 app.use(cors());

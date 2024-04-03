@@ -1,10 +1,10 @@
 const FakePostModel = require('./src/models/FakePostDataModel');
 const FakeDeliveryModel = require('./src/models/FakeRestaurantsModel');
 
-console.log();
+console.log('');
 console.log('Start bootstrap', '...');
 console.log('* Creazione dei permanent Models','...');
-console.log();
+console.log('');
 
 let model={};
 
@@ -27,7 +27,7 @@ try {
     console.log(error);
 }
 
-console.log();
+console.log('');
 console.log(`* Avvio del server`, '...');
-console.log();
+console.log('');
 require('./src/');
