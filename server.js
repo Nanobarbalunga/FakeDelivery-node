@@ -1,5 +1,7 @@
-const FakePostModel = require('./src/models/FakePostDataModel');
-const FakeDeliveryModel = require('./src/models/FakeRestaurantsModel');
+const path = require('path');
+const FakePostModel = require(path.join(__dirname, './src/models/FakePostDataModel'));
+const FakeDeliveryModel = require(path.join(__dirname,'./src/models/FakeRestaurantsModel'));
+
 
 console.log('');
 console.log('Start bootstrap', '...');
@@ -30,4 +32,4 @@ try {
 console.log('');
 console.log(`* Avvio del server`, '...');
 console.log('');
-require('./src/');
+require(path.join(__dirname,'./src/'));
