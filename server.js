@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const FakePostModel = require(path.join(__dirname, './src/models/FakePostDataModel'));
 const FakeDeliveryModel = require(path.join(__dirname,'./src/models/FakeRestaurantsModel'));
 
@@ -22,8 +23,10 @@ let model={};
 
 model=new FakeDeliveryModel();
 try {
-    model.create()
-    console.log(`* Model ${model.constructor.name} `, 'creato','...');
+    if (!fs.existsSync(path.join(__dirname,'./cache/FRestaurantsModel.json'))) {
+        model.create()
+        console.log(`* Model ${model.constructor.name} `, 'creato','...');
+    }
 } catch (error) {
     console.log(`* Model ${model.constructor.name} `, 'fallito','...');
     console.log(error);
