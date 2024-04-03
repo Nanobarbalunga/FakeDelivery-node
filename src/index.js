@@ -28,9 +28,9 @@ app.use('/', routes);
 
 console.log(`* Creazione app express`,5, ' ...')
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 4000, function() {
 	console.log(`* Creazione app express`,6, ' ...')
-	console.log('Express app running on port ' + (process.env.PORT || 3000))
-	console.log('site => http://localhost:' + (process.env.PORT || 3000))
+	console.log('Express app running on port ' + (process.env.PORT || 4000))
+	console.log('site => http://localhost:' + (process.env.PORT || 4000))
 });
 console.log(`* Creazione app express`,7, ' ...')
