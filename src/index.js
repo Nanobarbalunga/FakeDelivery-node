@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 console.log(`* Creazione app express`,4, ' ...')
 
-app.use('/', routes);
+app.use('/api', routes);
 
 console.log(`* Creazione app express`,5, ' ...')
 
