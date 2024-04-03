@@ -3,8 +3,8 @@ const { fakerIT: faker } = require('@faker-js/faker');
 const fs = require('fs');
 const { dirname } = require('path');
 const path = require('path');
-//const appDir = dirname(require.main.filename);
 const appDir = dirname('./');
+//const appDir = dirname(require.main.filename);
 
 
 

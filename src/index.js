@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+
 const path = require('path');
 
 const routes = require(path.join(__dirname,'./routes'));
@@ -38,10 +39,10 @@ app.use('/',(req,res)=>{
 
 console.log(`* Creazione app express`,5, ' ...')
 
-app.listen(3000, function() {
+app.listen(4000, function() {
 	console.log(`* Creazione app express`,6, ' ...')
-	console.log('Express app running on port ' + (3000))
-	console.log('site => http://localhost:' + (3000))
+	console.log('Express app running on port ' + (4000))
+	console.log('site => http://localhost:' + (4000))
 });
 console.log(`* Creazione app express`,7, ' ...')
 
