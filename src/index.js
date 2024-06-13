@@ -27,15 +27,15 @@ app.use(bodyParser.urlencoded({extended: true}));
 console.log(`* Creazione app express`,4, ' ...')
 
 app.use('/api', routes);
-app.use('/',(req,res)=>{
-    res.write(`
-        <h1>Usa una di queste path</h1>
-        <ul>
-            <li><a href="./blog">blog</a></li>
-            <li><a href="./delivery">delivery</a</li>
-        </ul>
-    `)
-});
+// app.use('/',(req,res)=>{
+//     res.write(`
+//         <h1>Usa una di queste path</h1>
+//         <ul>
+//             <li><a href="./blog">blog</a></li>
+//             <li><a href="./delivery">delivery</a</li>
+//         </ul>
+//     `)
+// });
 
 console.log(`* Creazione app express`,5, ' ...')
 
